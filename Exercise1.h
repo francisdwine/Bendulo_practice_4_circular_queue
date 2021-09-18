@@ -43,11 +43,13 @@ PersonLinkedList get_all_females(CircularArrayQueue list){
 	printf("%d",count);
 	while(i<count){
 		if(list.data[list.front].sex=='f'){
+			enqueue(&list,list.data[list.front]);
 			insert_first_LL(&myLL,list.data[list.front]);
 			dequeue(&list);
 		
 		}
 		else{
+			enqueue(&list,list.data[list.front]);
 			dequeue(&list);
 		
 		}

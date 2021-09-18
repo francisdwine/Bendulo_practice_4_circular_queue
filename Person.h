@@ -90,7 +90,7 @@ void insert_first_DAL(PersonDynamicArrayList *list,Person p){
 		list->data=(Person*)realloc(list->data,sizeof(Person)*list->max);
 	}
 	list->data[list->count]=p;
-	printf("%s",list->data[list->count].name);
+	
 	list->count++;
 }
 void display_DAL(PersonDynamicArrayList list){

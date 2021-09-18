@@ -12,12 +12,12 @@ int main(void)
    enqueue(&myq,p);
    enqueue(&myq,createPerson("Muta",'f',"London"));
    enqueue(&myq,createPerson("BigShaq",'f',"London"));
-     enqueue(&myq,createPerson("inefficientcoder",'m',"Siquijor"));
-       //enqueue(&myq,createPerson("Shocker",'m',"OLLI"));
+enqueue(&myq,createPerson("inefficientcoder",'m',"Siquijor"));
+   enqueue(&myq,createPerson("Shocker",'m',"OLLI"));
   
    PersonLinkedList femaleLL=get_all_females(myq);
    
-   	printf("%d",get_queue_length(myq));
+  
    display_LL(femaleLL);
    PersonDynamicArrayList Males=remove_all_males(&myq);
    display_DAL(Males);
